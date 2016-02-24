@@ -6,6 +6,7 @@
 
 package graphics;
 
+import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JFrame;
@@ -52,5 +53,12 @@ public class Frame extends JFrame{
             }
         };
         this.addKeyListener(kl);
+    }
+    public void addPlayer(){
+        JPanel player = new JPanel();
+        player.setBackground(Color.blue);
+        player.setBounds(0, 0, 100, 100);
+        this.addArrowKeys(player);
+        this.add(player);
     }
 }

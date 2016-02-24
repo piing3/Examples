@@ -6,6 +6,10 @@
 
 package testing;
 
+import graphics.Frame;
+import java.awt.Color;
+import javax.swing.JPanel;
+
 
 /**
  * Project:
@@ -18,5 +22,6 @@ public class GraphicsTest {
     public GraphicsTest() {
         graphics.Frame frame = new graphics.Frame();
         frame.setVisible(true);
+        frame.addPlayer();
     }
 }
