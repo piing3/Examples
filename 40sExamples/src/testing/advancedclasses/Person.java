@@ -13,7 +13,7 @@ package testing.advancedclasses;
  * Teacher: Mr. Wachs 
  */
 public class Person {
-    private String name;
+    protected String name;
     public int age;
     
     /**
@@ -44,5 +44,20 @@ public class Person {
     public void talk(){
         System.out.println(name+" is "+age);
     }
+
+    @Override
+    public String toString() {
+        return name+" is "+age;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Person poop = (Person)obj;
+        return poop.age == age;
+    }
+    
+    
+    
+    
     
 }

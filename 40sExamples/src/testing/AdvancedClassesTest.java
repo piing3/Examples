@@ -27,6 +27,11 @@ public class AdvancedClassesTest {
         rick.age = 17;
         rick.setName("Rick");
         rick.talk();
+        
+        System.out.println(dave.toString());
+        
+        if (rick.equals(dave)) System.out.println("=");
+        else System.out.println("!=");
     }
 
 }
