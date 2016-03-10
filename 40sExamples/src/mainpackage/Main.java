@@ -1,7 +1,6 @@
 package mainpackage;
 
-import testing.GraphicsTest;
-import testing.RecursionTest;
+import testing.AdvancedClassesTest;
 
 /**
  * Project:
@@ -15,8 +14,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        new AdvancedClassesTest();
         //RecursionTest test1 = new RecursionTest();
-        GraphicsTest test2 = new GraphicsTest();
+        //GraphicsTest test2 = new GraphicsTest();
     }
 
 }
